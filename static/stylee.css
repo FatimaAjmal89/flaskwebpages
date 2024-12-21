@@ -1,0 +1,278 @@
+/* General styles */
+/* Header styling */
+/* About Section */
+.about {
+    padding: 40px;
+    background-color: #f4f4f9; /* Light background color for the About Us section */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+header {
+    position: relative;
+    padding: 50px 0; /* Adjusted padding for a compact and sleek header */
+    text-align: center;
+    z-index: 1;
+    background-image: url('{{ url_for("static", filename="images/background.jpg") }}'); /* Set header background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Make the background image fixed */
+
+}
+
+/* Header Text Styling */
+header h1 {
+    font-size: 2.5em; /* Slightly reduced heading size for better fit */
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Increased text shadow for better readability on darker background */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Use a clean font */
+    color: white; /* Set default text color to white */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    padding: 50px 0; /* Adjusted padding for a compact and sleek header */
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight background opacity for effect */
+}
+
+header h1 {
+    font-size: 2.5em; /* Slightly reduced heading size for better fit */
+    color: white;
+    margin: 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Increased space between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4); /* Lighter background for content */
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Gym Highlights */
+.highlights h2 {
+    text-align: center;
+    font-size: 2.2em; /* Slightly smaller heading */
+    margin-bottom: 10px;
+}
+
+.highlights ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.highlights ul li {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Background image opacity adjustment */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.3; /* Lighter background opacity */
+    z-index: -1;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .highlights ul li,
+    .about ul li,
+    .membership ul li {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Membership Plan Styling */
+.membership-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Styling for each plan card */
+.membership-plans .plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.membership-plans .plan:hover {
+    transform: translateY(-10px);
+}
+
+.membership-plans .plan img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Plan Title */
+.membership-plans .plan h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Plan Price */
+.membership-plans .plan p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Plan List */
+.membership-plans .plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-plans .plan ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Call-to-Action Buttons */
+.btn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Footer Links */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
