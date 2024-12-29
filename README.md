@@ -6,9 +6,13 @@ The web application is built with Python's Flask framework and includes a basic 
 
 ## Features
 -Static and dynamic routing using Flask
+
 -Responsive and modern CSS styling
+
 -Multiple HTML templates for different pages (Home, About, Registration, and Login)
+
 -User registration and login functionality with basic validation
+
 -Flash messages for success and error handling
 
 ## Installation
