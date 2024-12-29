@@ -276,3 +276,363 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/*rejister*/
+/* General Form Styling */
+.wrapper {
+    padding: 40px;
+    background-color: #f4f4f9;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.wrapper h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #5cb85c;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.policy input {
+    margin-right: 10px;
+}
+
+.policy h3 {
+    font-size: 1rem;
+    color: #555;
+}
+
+.input-box.button input {
+    background-color: #5cb85c;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.input-box.button input:hover {
+    background-color: #4cae4c;
+}
+
+.text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.text h3 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.text a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styling */
+header {
+    position: relative;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 30px;
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .input-box input {
+        padding: 12px;
+    }
+
+    .input-box.button input {
+        padding: 12px 15px;
+    }
+
+    .text h3 {
+        font-size: 1rem;
+    }
+}
+/*login*/
+/* Base styles */
+body {
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    background-color: #f4f4f9; /* Light background color for the body */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+header {
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for header */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Login Form Styles */
+.wrapper {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect background */
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5); /* Light background for inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-field label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 1rem;
+    color: #333;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+/* Placeholder styling */
+.input-field input:focus + label,
+.input-field input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #5cb85c;
+}
+
+/* Forget password and remember me */
+.forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forget p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.forget a {
+    font-size: 0.9rem;
+    color: #5cb85c;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Register link */
+.register p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.register a {
+    color: #5cb85c;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+}
+/* Input Field Styling */
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Adjust the input field */
+.input-field input {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5); /* Light background for inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Styling for the label inside the input field */
+.input-field label {
+    position: absolute;
+    top: 50%; /* Align label vertically at the center */
+    left: 15px;
+    font-size: 1rem;
+    color: #333;
+    pointer-events: none;
+    transform: translateY(-50%); /* Adjust vertical centering */
+    transition: 0.3s;
+}
+
+/* When input is focused or filled, move the label */
+.input-field input:focus + label,
+.input-field input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #5cb85c;
+}

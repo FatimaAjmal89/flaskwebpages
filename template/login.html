@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loginl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylee.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Membership Plans</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/membership">Membership</a></li>
+                <li><a href="/registration">Registration</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="wrapper">
+    <form action="#">
+      <h2>Login</h2>
+        <div class="input-field">
+        <input type="text" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+      <a href="registration.html">Register here</a>
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>
